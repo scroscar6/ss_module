@@ -2,6 +2,7 @@
     "name": "sitelsur/ss-module",
     "description": "Framework beta Sitelsur",
     "license": "MIT",
+    "version": "1.0.0",
     "authors": [
         {
             "name": "Sitelsur",
