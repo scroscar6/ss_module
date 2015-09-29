@@ -4,9 +4,6 @@
     "license": "MIT",
     "version": "1.0.0",
     "minimum-stability": "dev",
-    "require": {
-        "sitelsur/ss-module": "dev-master"
-    },
     "repositories": [
         {
             "type": "vcs",
