@@ -3,6 +3,12 @@
     "description": "Framework beta Sitelsur",
     "license": "MIT",
     "version": "1.0.0",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/scroscar6/ss_module.git"
+        }
+    ],
     "authors": [
         {
             "name": "Sitelsur",
