@@ -1,0 +1,8 @@
+{
+    "name": "sitelsur/ss-module",
+    "description": "Framework beta Sitelsur",
+    "require": {
+        "php": ">=5.4.0",
+        "another-vendor/package": "1.*"
+    }
+}

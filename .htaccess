@@ -1,0 +1,30 @@
+# Use PHP   5.4
+#AddHandler application/x-httpd-php54 .php
+Options All -Indexes
+<Files .*>
+    Order Deny,Allow
+    Deny From All
+</Files>
+<ifmodule mod_rewrite.c>
+    RewriteEngine On
+    Options +FollowSymLinks
+        RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteCond %{REQUEST_FILENAME} !-d
+
+        #RewriteBase /~ugeltarara
+
+        RewriteRule ^(?:controlador|librerias|modelos|vistas)\b.* index.php/$0 [L]
+
+        RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteCond %{REQUEST_FILENAME} !-d
+
+        # Rewrite all other URLs to index.php/URL
+        #RewriteRule .* index.php/$0 [PT]
+        RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+
+        #ErrorDocument 403: "/plantilla/error/403.php"
+        #ErrorDocument 404: "/plantilla/error/404.php"
+        #ErrorDocument 405: "/plantilla/error/405.php"
+</ifmodule>
+
+
