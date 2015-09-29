@@ -2,8 +2,6 @@
     "name": "sitelsur/ss-module",
     "description": "Framework beta Sitelsur",
     "license": "MIT",
-    "version": "1.0.0",
-    "minimum-stability": "dev",
     "repositories": [
         {
             "type": "vcs",
